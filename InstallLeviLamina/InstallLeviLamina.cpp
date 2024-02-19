@@ -4,7 +4,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <filesystem>
 
 
 void installLse(std::string LipCommand) {
@@ -17,18 +16,18 @@ void installLse(std::string LipCommand) {
 };
 
 void install(std::string LipCommand) {
-    const std::string config = "config GoModuleProxyURL";
-    const std::string DownLoadSource[2] = { "https://github.bibk.top","https://goproxy.cn" };
     std::string YesOrNo;
     std::cout << "是否切换下载源 (yes / no) ";
     std::cin >> YesOrNo;
     if (YesOrNo == "y" || YesOrNo == "yes") {
-        std::cout << "选择切换的下载源 (输入 yes / no) " << std::endl;
+        /*std::cout << "选择切换的下载源 (输入 yes / no) " << std::endl;
         std::cout << "1. " << DownLoadSource[0] << std::endl;
         std::cout << "2. " << DownLoadSource[1] << std::endl;
         std::cin >> YesOrNo;
-        if (YesOrNo == "y" || YesOrNo == "yes") std::system((LipCommand + " " + config + " " + DownLoadSource[0]).c_str());
-        else std::system((LipCommand + " " + config + " " + DownLoadSource[1]).c_str());
+        if (YesOrNo == "y" || YesOrNo == "yes") {*/
+            std::system((LipCommand + " config  GoModuleProxyURL https://goproxy.cn").c_str());
+            std::system((LipCommand + " config GitHubMirrorURL https://github.bibk.top").c_str());
+        //};
         std::system((LipCommand + " install github.com/LiteLDev/LeviLamina").c_str());
         installLse(LipCommand);
     }
@@ -72,6 +71,7 @@ int main()
     }
     std::cout << "安装完毕" << std::endl;
     std::system("pause");
+    
     return 0;
 }
 
