@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Code\\ll3\\InstallLeviLamina\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C740B380-A473-4019-9C11-7A405CF4A5BD}|InstallLeviLamina\\InstallLeviLamina.vcxproj|E:\\Code\\ll3\\InstallLeviLamina\\InstallLeviLamina\\InstallLeviLamina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C740B380-A473-4019-9C11-7A405CF4A5BD}|InstallLeviLamina\\InstallLeviLamina.vcxproj|solutionrelative:InstallLeviLamina\\InstallLeviLamina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C740B380-A473-4019-9C11-7A405CF4A5BD}|InstallLeviLamina\\InstallLeviLamina.vcxproj|E:\\Code\\ll3\\InstallLeviLamina\\InstallLeviLamina\\First.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C740B380-A473-4019-9C11-7A405CF4A5BD}|InstallLeviLamina\\InstallLeviLamina.vcxproj|solutionrelative:InstallLeviLamina\\First.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C740B380-A473-4019-9C11-7A405CF4A5BD}|InstallLeviLamina\\InstallLeviLamina.vcxproj|E:\\Code\\ll3\\InstallLeviLamina\\InstallLeviLamina\\start.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C740B380-A473-4019-9C11-7A405CF4A5BD}|InstallLeviLamina\\InstallLeviLamina.vcxproj|solutionrelative:InstallLeviLamina\\start.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "start.h",
+              "DocumentMoniker": "E:\\Code\\ll3\\InstallLeviLamina\\InstallLeviLamina\\start.h",
+              "RelativeDocumentMoniker": "InstallLeviLamina\\start.h",
+              "ToolTip": "E:\\Code\\ll3\\InstallLeviLamina\\InstallLeviLamina\\start.h",
+              "RelativeToolTip": "InstallLeviLamina\\start.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-20T19:53:34.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "First.h",
+              "DocumentMoniker": "E:\\Code\\ll3\\InstallLeviLamina\\InstallLeviLamina\\First.h",
+              "RelativeDocumentMoniker": "InstallLeviLamina\\First.h",
+              "ToolTip": "E:\\Code\\ll3\\InstallLeviLamina\\InstallLeviLamina\\First.h",
+              "RelativeToolTip": "InstallLeviLamina\\First.h",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-20T19:20:10.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InstallLeviLamina.cpp",
+              "DocumentMoniker": "E:\\Code\\ll3\\InstallLeviLamina\\InstallLeviLamina\\InstallLeviLamina.cpp",
+              "RelativeDocumentMoniker": "InstallLeviLamina\\InstallLeviLamina.cpp",
+              "ToolTip": "E:\\Code\\ll3\\InstallLeviLamina\\InstallLeviLamina\\InstallLeviLamina.cpp",
+              "RelativeToolTip": "InstallLeviLamina\\InstallLeviLamina.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-20T18:54:06.763Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
