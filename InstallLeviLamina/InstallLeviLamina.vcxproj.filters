@@ -19,4 +19,12 @@
       <Filter>资源文件\源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="First.h">
+      <Filter>资源文件\源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="start.h">
+      <Filter>资源文件\源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

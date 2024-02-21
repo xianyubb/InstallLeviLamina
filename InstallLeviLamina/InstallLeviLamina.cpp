@@ -1,77 +1,56 @@
-﻿// InstallLeviLamina.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿
 
-#include <iostream>
-#include <fstream>
-#include <string>
+#include "First.h"
+#include "start.h"
 
 
-void installLse(std::string LipCommand) {
-    std::string YesOrNo;
-    std::cout << "是否安装 LSE (yes / no) ";
-    std::cin >> YesOrNo;
-    if (YesOrNo == "y" || YesOrNo == "yes") {
-        std::system((LipCommand + " install github.com/LiteLDev/LegacyScriptEngine").c_str());
+
+int main() {
+    if (times == 0) LipSet();
+
+    std::cout << "请选择接下来的操作..." << std::endl;
+    std::cout << "1. 更换 lip 下载源" << std::endl;
+    std::cout << "2. 安装LeviLamina" << std::endl;
+    std::cout << "3. 安装LegacyScriptEngine" << std::endl;
+    std::cout << "4. 安装插件" << std::endl;
+    std::cout << "5. 更新插件" << std::endl;
+    std::cout << "6. 启动服务器" << std::endl;
+    std::cout << "7. 退出程序" << std::endl;
+
+    std::string Action = "";
+    std::cin >> Action;
+
+    switch (std::stoi(Action)) {
+    case 1: {
+        ChangeDownLoad();
+        main();
+        std::system("pause");
+    };
+    case 2: {
+        InstallLeviLamina();
+        main();
+        std::system("pause");
+    };
+    case 3: {
+        InstallLegacyScriptEngine();
+        main();
+        std::system("pause");
+    };
+    case 4: {
+
+    };
+    case 5: {
+
+    };
+    case 6: {
+        start();
+    };
+    case 7: {
+        exit(0);
     }
-};
-
-void install(std::string LipCommand) {
-    std::string YesOrNo;
-    std::cout << "是否切换下载源 (yes / no) ";
-    std::cin >> YesOrNo;
-    if (YesOrNo == "y" || YesOrNo == "yes") {
-        /*std::cout << "选择切换的下载源 (输入 yes / no) " << std::endl;
-        std::cout << "1. " << DownLoadSource[0] << std::endl;
-        std::cout << "2. " << DownLoadSource[1] << std::endl;
-        std::cin >> YesOrNo;
-        if (YesOrNo == "y" || YesOrNo == "yes") {*/
-            std::system((LipCommand + " config  GoModuleProxyURL https://goproxy.cn").c_str());
-            std::system((LipCommand + " config GitHubMirrorURL https://github.bibk.top").c_str());
-        //};
-        std::system((LipCommand + " install github.com/LiteLDev/LeviLamina").c_str());
-        installLse(LipCommand);
     }
-    else {
-        std::system((LipCommand + " install github.com/LiteLDev/LeviLamina").c_str());
-        installLse(LipCommand);
-    }
-};
 
 
 
-void start() {
-    std::cout << "欢迎使用 LeviLamina 一键开服包" << std::endl;
-    std::cout << "Author: xianyubb" << std::endl;
-    std::cout << "QQ: 2149656630" << std::endl;
-    std::cout << "Group: 865286891" << std::endl;
-}
-
-bool fileExistsInDirectory(const std::string& directory, const std::string& filename) {
-    std::ifstream file(directory + "/" + filename);
-    return file.good();
-}
-
-int main()
-{
-    start();
-    
-    const std::string filepath = "./lip";
-    std::string filename = "lip.exe"; // 替换为你要检查的文件名
-    if (fileExistsInDirectory(filepath, filename)) {
-        std::cout << "找到了 lip 包管理器 开始安装 LeviLamina..." << std::endl;
-        install("lip\\lip.exe");
-    }
-    else {
-        std::cout << "没有找到 LIP 包管理器" << std::endl;
-        std::cout << "即将使用系统环境中的 LIP 安装 LeviLamina..." << std::endl;
-        std::cout << "若跳出 'lip' 不是内部或外部命令，也不是可运行的程序或批处理文件。" << std::endl;
-        std::cout << "请您安装 lip 包管理器 并放置在 本程序目录下的 lip 文件夹 里面装 lip.exe 即可" << std::endl;
-        std::cout << "您也可以将 lip 加于环境变量之中 " << std::endl;
-        install("lip");
-    }
-    std::cout << "安装完毕" << std::endl;
-    std::system("pause");
-    
     return 0;
-}
-
+};
